@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-image: url('../img/payment.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+header{
+    width: 100vw;
+    min-height: 100vh;
+    /* background-color: #34495e; */
+    /* background-image: url('//static/img/contact.jpg'); */
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.515);
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+}
+form{
+    padding: 1rem;
+}
+h3{
+    margin-top: 1rem;
+    color: #2c3e50;
+    font-weight: bold;
+    font-style: inherit;
+}
+form input{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+#state{
+    display: flex;
+    margin-top: 0.5rem;
+}
+#state select{
+    padding: 0.5rem 0.7rem;
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+#select input[type="number"]{
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+.right input[type="button"]{
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background: rgba(10, 161, 10, 0.823);
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background: #2c3e50;
+}
+@media only screen and (max-width:770px){
+    .container{
+        flex-direction: column;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+.right form img{
+    border: 2px solid black;
+    
+}

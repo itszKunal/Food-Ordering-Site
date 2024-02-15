@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="/static/css/payment.css">
+    <link rel="stylesheet" href="/static/css/i.css'">
+    <style>
+        .btn{
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h3>BILLING ADDRESS</h3>
+                <form>
+                    Full Name
+                    <input type="text" name="" id="" placeholder="Enter name">
+                    Email
+                    <input type="email" name="" id="" placeholder="Enter Email">
+                    Mobile
+                    <input type="tel" name="" id="" placeholder="Enter number">
+                    Address
+                    <input type="text" name="" id="" placeholder="Enter address">
+                    City
+                    <input type="text" name="" id="" placeholder="Enter city name">
+                    <div id="state">
+                        <label>
+                            State
+                            <select name="" id="">
+                                <option value="">Choose state..</option>
+                                <option value="">Kolkata</option>
+                                <option value="">Jharkhand</option>
+                                <option value="">Bihar</option>
+                                <option value="">Punjab</option>
+                                <option value="">Haryana</option>
+                                <option value="">Delhi</option>
+                                <option value="">Maharastra</option>
+                                <option value="">Chattisghar</option>
+                                <option value="">Uttar Pradesh</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Kerala</option>
+                                <option value="">Jammu kashmir</option>
+                                <option value="">Uttrakhand</option>
+                                <option value="">Assam</option>
+                                <option value="">Nagaland</option>
+                                <option value="">Ladakh</option>
+                                <option value="">Arunachal Pradesh</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Zip Code</span>
+                            <input type="number" name="" id="" placeholder="Enter ZIP">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>PAYMENT</h3>
+                <form>
+                    Accepted Cards
+                    <br>
+                    <img src="/static/card.png" height="50px">
+                    <br><br>
+                    Card Number
+                    <input type="tel" name="" id="" placeholder="Enter card number">
+                    EXP Month
+                    <input type="text" name="" id="" placeholder="Enter Month">
+                    <div id="state">
+                        <label>
+                            exp Year
+                            <select name="" id="">
+                                <option value="">Choose Year</option>
+                                <option value="">2026</option>
+                                <option value="">2025</option>
+                                <option value="">2024</option>
+                                <option value="">2022</option>
+                                <option value="">2028</option>
+                                <option value="">2027</option>
+                                <option value="">2026</option>
+                                <option value="">2025</option>
+                                <option value="">2024</option>
+                                <option value="">2023</option>
+                            </select>
+                        </label>
+                        <label>
+                            CVV
+                            <input type="number" name="" id="" placeholder="Enter CVV">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn" style="height: 40px; width: 90%; background-color: rgb(35, 153, 35);border: 2px solid black; border-radius: 5px;"><a href="/invoice" style="text-decoration: none;color: white;size: 90px;">Pay</a></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>

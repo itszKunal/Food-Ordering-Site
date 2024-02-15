@@ -1,0 +1,31 @@
+.h5,th{
+    background-color: #ff9f43;
+}
+.desc{
+    width: 300px;
+}
+th{
+    width: 100px;
+}
+thead{
+    text-align: center;
+}
+.table1{
+    width: 90%;
+    border: 2px solid black;
+}
+.st{
+    width: 100px;
+}
+input{
+    border: none;
+    outline: none;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.table2{
+    text-align: center;
+    border: 2px solid black;
+}

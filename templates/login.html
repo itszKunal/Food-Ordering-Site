@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;900&family=Montserrat:wght@300;400;500;600;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show fade-in-text mx-5" role="alert">
+        <strong>{{message}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+
+    {% endfor %}
+    <div class="container-fluid py-2" id="Login">
+        <div class="row py-5">
+            <div class="col-md-6 col-9 my-5 pe-5">
+                <form class="p-4 text-center pb-5" action="/login" method="POST">
+                    {% csrf_token %}
+                    <label for="" class="">Login</label><br><br>
+                    <input type="text" name="name" id="" placeholder="Username" class="py-4 px-4"><br><br>
+                    <input type="password" name="pass1" id="" placeholder="Password" class="py-4 px-4"><br><br>
+                    <button type="submit" class="btn btn-lg btn-success">Login</button><br><br>
+                    Don't Have an account? <a href="/signup">Signup</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Java script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

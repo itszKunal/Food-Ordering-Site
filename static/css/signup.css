@@ -1,0 +1,38 @@
+#sign-In{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 711px;
+
+}
+form{
+    color: #CFD2CF;
+    /* font-family: 'Jost', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 1px 2px 3px rgba(0, 0, 0, 0.397);
+
+}
+input{
+    width: 85%;
+    height: 30px;
+    outline: none;
+    border: 1px;
+    border-radius: 6px;
+}
+label{
+    font-size: 30px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 0, 0.83);
+}
+a:hover{
+    text-decoration: underline ;
+}
+:placeholder-shown{
+    color:green;
+}
+::placeholder{
+    color: black;
+}
